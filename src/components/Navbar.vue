@@ -14,10 +14,10 @@
           <a href="#">Why Selling with us?</a>
         </li>
         <li>
-          <router-link to="/about" @click="toggleNav()">About</router-link>
+          <a href="/about" @click="toggleNav()">About</a>
         </li>
         <li>
-          <router-link to="/contact" @click="toggleNav()">Contact</router-link>
+          <a href="/contact" @click="toggleNav()">Contact</a>
         </li>
       </ul>
     </div>
@@ -64,14 +64,13 @@ export default {
 
 </script>
 
-<style>
+<style lang="scss">
     #pageTitle {
       text-decoration: none !important;
-    }
-
-    #pageTitle:hover {
-      text-decoration: none !important;
-      text-emphasis: none;
+      &:hover {
+        text-decoration: none !important;
+        text-emphasis: none;
+      }
     }
 
     .btn:focus {
@@ -79,71 +78,64 @@ export default {
     }
 
     .navbar {
-    background-color: #c4c4c4;
+      background-color: #c4c4c4;
     }
 
     #menuBar {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    }
-
-    #menuBar ul {
-    padding-left: 0;
-    }
-
-    #menuBar li {
-    list-style-type: none;
-    }
-
-    #menuBar a {
-    text-decoration: none;
-    color:black;
-    }
-
-    #menuBar a:hover {
-    color:lightseagreen
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      ul {
+        padding-left: 0;
+        li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            color:black;
+              &:hover {
+                color:lightseagreen;
+              }
+          }
+        }
+      }
     }
 
     @media (min-width: 20em) {
-    #menuBar {
+      #menuBar {
         margin-top:2rem;
+        li {
+          margin: 1rem 0;
+          a {
+            font-size:1.35rem;
+          }
+        }
+      }
     }
-    #menuBar a {
-        font-size:1.35rem;
-    }
-    #menuBar li {
-        margin: 1rem 0;
-    }
-    }
-
 
     @media (min-width: 43em) {
-    #menuBar {
+      #menuBar {
         margin-top:4rem;
-    }
-    #menuBar a {
-        font-size:2rem;
-    }
-    #menuBar li {
-        margin: 2.5rem 0;
-    }
+        li {
+          margin: 2.5rem 0;
+          a {
+          font-size:2rem;
+          }
+        }
+      }
     }
 
     @media (min-width: 62em) {
-    #menuBar {
-        margin-top:4rem;
-    }
-
-    #menuBar a {
-        font-size:2.75rem;
-    }
-
-    #menuBar li {
-        margin:1.5rem 0;
-    }
+      #menuBar {
+          margin-top:4rem;
+          li {
+            margin:1.5rem 0;
+            a {
+              font-size:2.75rem;
+            }
+          }
+      }
     }
 </style>
