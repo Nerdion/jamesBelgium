@@ -8,20 +8,24 @@
 		</div>
 		<div class="my-5"></div>
 		<div class="row">
-			<div class="col-md-4 text">
+			<div class="col-md-4">
 				<div class="box"></div>
 				<p>
 					Ut enim ad minim veniam,
 					quis nostrud exercitation
 				</p>
 			</div>
-			<div class="col-md-4 textt">
+			<div class="col-md-4">
+				<div class="box"></div>
+				<p>
 				Ut enim ad minim veniam,
-				quis nostrud exercitation
+				quis nostrud exercitation</p>
 			</div>
-			<div class="col-md-4 texttt">
+			<div class="col-md-4">
+				<div class="box"></div>
+				<p>
 				Ut enim ad minim veniam,
-				quis nostrud exercitation
+				quis nostrud exercitation</p>
 			</div>
 		</div>
 	</div>
@@ -37,9 +41,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.box {
-	height: 5rem;
-	width: 5rem;
-	background-color: dimgray;
-}
 </style>

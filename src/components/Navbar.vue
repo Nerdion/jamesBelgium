@@ -70,6 +70,7 @@ export default {
 <style lang="scss">
 #pageTitle {
 	text-decoration: none !important;
+	color:black;
 	&:hover {
 		text-decoration: none !important;
 		text-emphasis: none;
