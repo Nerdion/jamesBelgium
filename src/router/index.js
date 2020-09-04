@@ -10,6 +10,8 @@ import Register from '../views/Auth/Register.vue'
 
 import MyAccountRoutes from './myAccount'
 
+import GettingStartedRoutes from './gettingStarted'
+import GettingStarted from '../views/GettingStarted.vue'
 const routes = [
   {
     path: '/',
@@ -42,6 +44,12 @@ const routes = [
     path:'/register',
     name:'Register',
     component: Register
+  },
+  {
+    path:'/gettingStarted',
+    name:'GettingStarted',
+    component: GettingStarted,
+    children: GettingStartedRoutes,
   },
 ]
 
