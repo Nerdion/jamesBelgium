@@ -88,12 +88,13 @@ export default {
 
 <style lang="scss">
 .box {
-  width: 75%;
-  padding-top: 30%;
-  padding-bottom: 30%;
+  width: 80%;
+  margin-left:10%;
+  margin-bottom: 5%;
+  padding-top: 35%;
+  padding-bottom: 35%;
   display: block;
   background-color: dimgray;
-  margin-bottom: 20px;
 }
 
 .smallBox {

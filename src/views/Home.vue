@@ -1,35 +1,34 @@
 <template>
   <div class="home">
     <div id="mainPageContent" class="container-fluid">
-      <div
-        class="row d-flex justify-content-center text-center align-items-center h-100"
-      >
-        <div class="col-6">
-          <p class="contextTitle">Lorem ipsum dolor</p>
-          <div class="row justify-content-center">
-            <div class="col-4">
-              <input type="button" class="btn btn-primary" value="ipsum" />
+      <p class="contextTitle">Lorem ipsum dolor</p><br>
+      <div class="row my-2 justify-content-center">
+        <button type="button" @click=openIpsum() class="btn btn-lg btn-primary col-2 text-center mr-4 px-5">ipsum</button>
+        <button type="button" @click=openConsec() class="btn btn-lg btn-primary col-2 text-center ml-4 px-5">consec</button>
+      </div>
+      <div class="row justify-content-center">
+        <div id="ipsumNav" class="col-5 form-group my-4">
+          <input type="text" class="form-control" placeholder="totam rem aperiam"/>
+          <input type="text" class="form-control" placeholder="totam rem aperiam"/>
+          <button class="btn btn-lg btn-dark" >Show</button>
+        </div>
+        <div id="consecNav" class="col-8 my-4">
+          <div class="row">
+            <div class="col mr-4">
+              <p><b class="mr-5">
+                Duis aute irure dolor </b><i class="ml-5">More Info</i></p>
+              <p>in reprehenderit in voluptate velit
+              esse cillum dolore</p>
+              <button class="btn btn-dark" onclick="window.location='/gettingStarted/one'">Select</button>
             </div>
-            <div class="col-4">
-              <input type="button" class="btn btn-primary" value="consec" />
+            <div class="col ml-4">
+              <p><b>Duis aute irure dolor </b><i class="ml-5">More Info</i></p>
+              <p>
+              in reprehenderit in voluptate velit
+              esse cillum dolore</p>
+              <button class="btn btn-dark" onclick="window.location='/gettingStarted/one'">Select</button>
             </div>
           </div>
-          <input
-            type="text"
-            class="form-control"
-            id="text"
-            placeholder="totam rem aperiam"
-            name="text"
-          />
-          <br />
-          <input
-            type="text"
-            class="form-control"
-            id="text"
-            placeholder="totam rem aperiam"
-            name="text"
-          />
-          <input class="btn btn-dark" type="button" value="select" />
         </div>
       </div>
     </div>
@@ -196,10 +195,30 @@
 export default {
   name: "Home",
   components: {},
+  mounted() {
+    document.querySelector("#ipsumNav").style.display = "none";
+    document.querySelector("#consecNav").style.display = "none";
+  },
+  methods: {
+    openIpsum() {
+      document.querySelector("#ipsumNav").style.display = "block";
+      document.querySelector("#consecNav").style.display = "none";
+    },
+    openConsec() {
+      document.querySelector("#ipsumNav").style.display = "none";
+      document.querySelector("#consecNav").style.display = "block";
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+
+#otherOptionNav input {
+  padding:2px 8vh !important;
+  font-size:24px !important;
+}
+
 #mainPageContent {
   height: 100%;
   padding-top: 15%;
@@ -247,5 +266,19 @@ export default {
 
 .topicSubtitle {
   font-size:14px;
+}
+
+#ipsumNav input {
+  margin:10px 0 !important;
+}
+
+#consecNav > div.row > div {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding:1em;
+  button {
+    border-radius: 5px;
+  }
 }
 </style>
