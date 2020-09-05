@@ -1,11 +1,13 @@
 
 import MyAccountContent from '../views/Account/MyAccountContent.vue'
+
 import PersonalInfo from '../views/Account/personalInfo.vue'
 import Unkown1 from '../views/Account/unkown1.vue'
 import Unkown2 from '../views/Account/unkown2.vue'
 import Unkown3 from '../views/Account/unkown3.vue'
 import Subscriptions from '../views/Account/subscriptions.vue'
 import PaymentBillings from '../views/Account/PaymentBillings.vue'
+
 
 const MyAccountRoutes = [
   {

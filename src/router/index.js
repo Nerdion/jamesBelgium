@@ -10,6 +10,10 @@ import Register from '../views/Auth/Register.vue'
 
 import MyAccountRoutes from './myAccount'
 
+import GettingStartedRoutes from './gettingStarted'
+import GettingStarted from '../views/GettingStarted.vue'
+import OtherPageOne from '../views/OtherPages/PageOne.vue'
+import OtherPageTwo from '../views/OtherPages/PageTwo.vue'
 const routes = [
   {
     path: '/',
@@ -43,6 +47,22 @@ const routes = [
     name:'Register',
     component: Register
   },
+  {
+    path:'/gettingStarted',
+    name:'GettingStarted',
+    component: GettingStarted,
+    children: GettingStartedRoutes,
+  },
+  {
+    path:'/otherPageOne',
+    name:'OtherPageOne',
+    component:OtherPageOne,
+  },
+  {
+    path:'/otherPageTwo',
+    name:'OtherPageTwo',
+    component:OtherPageTwo,
+  }
 ]
 
 const router = createRouter({
