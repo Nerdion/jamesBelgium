@@ -6,7 +6,7 @@
 		<hr />
 		<div class="m-5"></div>
 		<div class="row">
-			<div class="col-4">
+			<div class="col-md-4 col-12">
 				<h5 class="mb-4 font-weight-bold">Our Mision</h5>
 				<p>
 					Lorem ipsum dolor sit amet,
@@ -24,7 +24,7 @@
 					fugiat nulla pariatur.
 				</p>
 			</div>
-			<div class="col-4">
+			<div class="col-md-4 col-12">
 				<h5 class="mb-4 font-weight-bold">Our Vision</h5>
 				<p>
 					Lorem ipsum dolor sit amet,
@@ -42,7 +42,7 @@
 					fugiat nulla pariatur.
 				</p>
 			</div>
-			<div class="col-4">
+			<div class="col-md-4 col-12">
 				<h5 class="mb-4 font-weight-bold">Our Mision</h5>
 				<p>
 					Lorem ipsum dolor sit amet,
