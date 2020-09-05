@@ -32,4 +32,9 @@ export default {
     padding:2rem;
     background-color:white;
 }
+
+button {
+  border: 1px solid black !important;
+  box-shadow: 0 0 2px black;
+}
 </style>

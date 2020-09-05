@@ -35,18 +35,20 @@
 					<h3 id="pageTitle">TBD</h3>
 				</router-link>
 			</div>
-			<div class="col text-right">
-				<div class="row">
-					<div class="col">
+			<div class="col">
+				<div class="row justify-content-right">
+					<div class="col-5"></div>
+					<div class="col-6">
 						<div class="row">
 							<div class="col">
-								<button class="btn btn-default h3" onclick="window.location='/login'">Sign In</button>
+								<a class="btn h3" href="/login">Sign In</a>
 							</div>
 							<div class="col d-none d-sm-block ">
 								<button class="btn btn-light h3" onclick="window.location='/register'">Register</button>
 							</div>
 						</div>
 					</div>
+					<div class="col-1"></div>
 				</div>
 			</div>
 		</div>
@@ -71,6 +73,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+$primary-color : #F1CFCF;
+$secondary-color: #c4c4c4;
+$blue-color:blue;
+
 #pageTitle {
 	text-decoration: none !important;
 	color:black;
@@ -85,7 +92,7 @@ export default {
 }
 
 .navbar {
-	background-color: #c4c4c4;
+	background-color: $secondary-color;
 }
 
 #menuBar {
@@ -107,7 +114,7 @@ export default {
 				text-decoration: none;
 				color: black;
 				&:hover {
-					color: lightseagreen;
+					color: $blue-color;
 				}
 			}
 		}
