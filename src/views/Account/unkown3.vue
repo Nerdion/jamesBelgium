@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="my-5"></div>
-		<div class="row">
+		<div class="row text-center">
 			<div class="col-md-3">
 				<div class="box"></div>
 				<p>

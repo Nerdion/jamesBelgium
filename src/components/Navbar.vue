@@ -1,5 +1,6 @@
 <template>
 	<div id="menuBar">
+		<div class="py-4"></div>
 		<ul class="text-center">
 			<li>
 				<a href="/myaccount">Your TDB Account</a>
@@ -35,15 +36,19 @@
 				</router-link>
 			</div>
 			<div class="col">
-				<div class="row">
-					<div class="col d-none d-sm-block"></div>
-					<div class="col">
-						<button class="btn btn-default h3">Sign In</button>
+				<div class="row justify-content-right">
+					<div class="col-5"></div>
+					<div class="col-6">
+						<div class="row">
+							<div class="col">
+								<a class="btn h3" href="/login">Sign In</a>
+							</div>
+							<div class="col d-none d-sm-block ">
+								<button class="btn btn-light h3" onclick="window.location='/register'">Register</button>
+							</div>
+						</div>
 					</div>
-					<div class="d-none d-sm-block col">
-						<button class="btn btn-light h3">Register</button>
-					</div>
-					<div class="d-none d-sm-block col"></div>
+					<div class="col-1"></div>
 				</div>
 			</div>
 		</div>
@@ -68,6 +73,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+$primary-color : #F1CFCF;
+$secondary-color: #c4c4c4;
+$blue-color:blue;
+
 #pageTitle {
 	text-decoration: none !important;
 	color:black;
@@ -82,17 +92,19 @@ export default {
 }
 
 .navbar {
-	background-color: #c4c4c4;
+	background-color: $secondary-color;
 }
 
 #menuBar {
-	background-color: white;
+	margin-top: 4rem;
+	background-color: rgba(white,0.8);
+	backdrop-filter: blur(5px);
 	z-index: 99;
 	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100%;
+	height: 90vh;
 	width: 100%;
 	ul {
 		padding-left: 0;
@@ -102,7 +114,7 @@ export default {
 				text-decoration: none;
 				color: black;
 				&:hover {
-					color: lightseagreen;
+					color: $blue-color;
 				}
 			}
 		}
@@ -111,7 +123,6 @@ export default {
 
 @media (min-width: 20em) {
 	#menuBar {
-		margin-top: 2rem;
 		li {
 			margin: 1rem 0;
 			a {
@@ -123,7 +134,6 @@ export default {
 
 @media (min-width: 43em) {
 	#menuBar {
-		margin-top: 4rem;
 		li {
 			margin: 2.5rem 0;
 			a {
@@ -135,7 +145,6 @@ export default {
 
 @media (min-width: 62em) {
 	#menuBar {
-		margin-top: 4rem;
 		li {
 			margin: 1.5rem 0;
 			a {
