@@ -3,26 +3,26 @@
     <div id="mainPageContent" class="container-fluid">
       <p class="contextTitle">Lorem ipsum dolor</p><br>
       <div class="row my-2 justify-content-center">
-        <button type="button" @click=openIpsum() class="btn btn-lg btn-primary col-2 text-center mr-4 px-5">ipsum</button>
-        <button type="button" @click=openConsec() class="btn btn-lg btn-primary col-2 text-center ml-4 px-5">consec</button>
+        <button type="button" @click=openIpsum() class="btn btn-lg btn-primary col-md-2 col-4 text-center mr-4">ipsum</button>
+        <button type="button" @click=openConsec() class="btn btn-lg btn-primary col-md-2 col-4 text-center ml-4">consec</button>
       </div>
       <div class="row justify-content-center">
-        <div id="ipsumNav" class="col-5 form-group my-4">
+        <div id="ipsumNav" class="col-md-5 col-10 form-group my-4">
           <input type="text" class="form-control" placeholder="totam rem aperiam"/>
           <input type="text" class="form-control" placeholder="totam rem aperiam"/>
-          <button class="btn btn-lg btn-dark" >Show</button>
+          <button class="btn btn-lg btn-dark" onclick="window.location='/otherPageOne'">Show</button>
         </div>
         <div id="consecNav" class="col-8 my-4">
-          <div class="row">
-            <div class="col mr-4">
-              <p><b class="mr-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4 mx-4 mt-3">
+              <p><b>
                 Duis aute irure dolor </b><i class="ml-5">More Info</i></p>
               <p>in reprehenderit in voluptate velit
               esse cillum dolore</p>
               <button class="btn btn-dark" onclick="window.location='/gettingStarted/one'">Select</button>
             </div>
-            <div class="col ml-4">
-              <p><b>Duis aute irure dolor </b><i class="ml-5">More Info</i></p>
+            <div class="col-12 col-md-4 mx-4 mt-3">
+              <p><b >Duis aute irure dolor </b><i class="ml-5">More Info</i></p>
               <p>
               in reprehenderit in voluptate velit
               esse cillum dolore</p>
@@ -35,21 +35,21 @@
   </div>
   <div class="container">
     <div class="row text-center">
-      <div class="">
-        <p class="display-4">
+      <div class="col">
+        <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt
         </p>
       </div>
     </div>
     <div class="row">
-      <div class="col">
-        <h1>Excepteur sint occaecat cupidatat</h1>
+      <div class="col mt-4">
+        <p style="font-size:24px">Excepteur sint occaecat cupidatat</p>
         <hr />
       </div>
     </div>
     <div class="row h-350">
-      <div class="col-md-6 col">
+      <div class="col-md-6 col-12 mt-3">
         <div class="roundBox sideBox">
           <p class="">You don’t have any chats at the moment</p>
           <div class="roundBox messageList">
@@ -66,8 +66,7 @@
           </div>
         </div>
       </div>
-
-      <div class="col-md-6 col">
+      <div class="col-md-6 col-12 mt-3">
         <div class="row">
           <div class="col roundBox sideBox-70"></div>
         </div>
@@ -83,7 +82,6 @@
   </div>
 
   <div class="container">
-    <div class="m-5"></div>
     <div class="row">
       <div class="col">
         <p class="topicTitle">Our AI System</p>
@@ -91,16 +89,16 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-4">
         <b class="">Fast</b>
       </div>
-      <div class="col-md-4">
+      <div class="col-4">
         <b class="">Reliable</b>
       </div>
-      <div class="col-md-4">
+      <div class="col-4">
         <b class="">Private</b>
       </div>
-    <div class="m-5"></div><div class="m-5"></div>
+    <div class="mb-5"></div>
     </div>
   </div>
 
@@ -117,22 +115,19 @@
       <div class="col-md-4">
         <b class="">Neque porro quisquam </b>
         <p class="">
-          Nemo enim ipsam <br />voluptatem quia voluptas sit <br />aspernatur
-          aut odit aut fugit
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
         </p>
       </div>
       <div class="col-md-4">
         <b class="">Neque porro quisquam</b>
         <p class="">
-          Nemo enim ipsam <br />voluptatem quia voluptas sit <br />aspernatur
-          aut odit aut fugit
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
         </p>
       </div>
       <div class="col-md-4">
         <b class="">Neque porro quisquam</b>
         <p class="">
-          Nemo enim ipsam <br />voluptatem quia voluptas sit <br />aspernatur
-          aut odit aut fugit
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
         </p>
       </div>
     </div>
@@ -156,25 +151,22 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 col-12">
         <b class="">Neque porro quisquam </b>
         <p class="">
-          Nemo enim ipsam <br />voluptatem quia voluptas sit <br />aspernatur
-          aut odit aut fugit
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
         </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-12">
         <b class="">Neque porro quisquam</b>
         <p class="">
-          Nemo enim ipsam <br />voluptatem quia voluptas sit <br />aspernatur
-          aut odit aut fugit
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
         </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-12">
         <b class="">Neque porro quisquam</b>
         <p class="">
-          Nemo enim ipsam <br />voluptatem quia voluptas sit <br />aspernatur
-          aut odit aut fugit
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
         </p>
       </div>
     </div>
@@ -245,19 +237,22 @@ export default {
 }
 
 .h-350 {
-  height: 350px !important;
+  padding-bottom: 150px !important;
   .sideBox {
     padding: 2rem;
-    height: 100%;
   }
 }
 
 .sideBox-70 {
-  height: 230px;
+  margin-left:1rem;
+  margin-right:1rem;
+  padding-bottom: 160px;
   margin-bottom: 20px;
 }
 .sideBox-30 {
-  height: 100px;
+  margin-left:1rem;
+  margin-right:1rem;
+  padding-bottom: 50px;
 }
 
 .topicTitle {
