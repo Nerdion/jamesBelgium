@@ -4,7 +4,13 @@ const path = require('path')
 
 const app = express()
 
-app.use('/',serveStatic(path.join(__dirname,'/dist')))
+app.use('/*',serveStatic(path.join(__dirname,'/dist')))
+
+app.use(history({
+    // OPTIONAL: Includes more verbose logging
+    verbose: true
+}))
+
 const port = process.env.PORT || 8080
 app.listen(port)
 console.log('Listening on port: '+port)
