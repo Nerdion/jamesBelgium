@@ -1,5 +1,5 @@
 
-# jamesUI
+# james
 JamesBanksy Fiverr UI from Prototype
 
 # frontend
