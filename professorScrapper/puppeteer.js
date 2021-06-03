@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer-core";
-const PUPPETEER_UI_FLAG = 1;
+const PUPPETEER_UI_FLAG = false;
 import contstants from "./constants.js";
 class Puppeteer {
 	constructor() {

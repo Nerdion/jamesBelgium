@@ -4,8 +4,7 @@ class Database {
 	constructor() {}
 
 	async getAllRecords() {
-		let response = await DB.collection(mainCollection).find({}).toArray();
-		return response;
+		return await DB.collection(mainCollection).find({}).toArray();
 	}
 
 	async insertArrayObject(data) {
