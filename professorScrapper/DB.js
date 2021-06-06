@@ -9,5 +9,7 @@ let connection = await MongoClient.connect("mongodb://localhost:27017/", {
 
 const DB = connection.db("univer");
 let mainCollection = "main";
+let dataCollection = "data";
+let mailWithData = "mailData";
 export default DB;
-export { mainCollection, ObjectId, DB };
+export { mainCollection, dataCollection, mailWithData, ObjectId };

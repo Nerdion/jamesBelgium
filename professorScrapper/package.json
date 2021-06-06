@@ -12,6 +12,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"mongodb": "^3.6.6",
-		"puppeteer-core": "^8.0.0"
+		"puppeteer-core": "^8.0.0",
+		"string-similarity": "^4.0.4"
 	}
 }
